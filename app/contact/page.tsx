@@ -31,7 +31,7 @@ const socials = [
   },
 ];
 
-export default function Example() {
+export default function ContactPage() {
   return (
     <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 pb-24">
       <Navigation />
