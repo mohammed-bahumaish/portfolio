@@ -23,14 +23,12 @@ export default async function ProjectsPage() {
               <article className="relative h-full w-full p-4 md:p-8">
                 <div className="flex justify-between gap-2 items-center">
                   <div className="text-xs text-zinc-100">
-                    {featured.date ? (
+                    {featured.date && (
                       <time dateTime={new Date(featured.date).toISOString()}>
                         {Intl.DateTimeFormat(undefined, {
                           dateStyle: "medium",
                         }).format(new Date(featured.date))}
                       </time>
-                    ) : (
-                      <span>SOON</span>
                     )}
                   </div>
                 </div>
