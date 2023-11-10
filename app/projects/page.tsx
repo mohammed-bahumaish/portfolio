@@ -4,8 +4,8 @@ import { Navigation } from "../components/nav";
 import { Article } from "./article";
 
 export default async function ProjectsPage() {
-  const featured = allProjects.find(p=>p.title === 'Prisma Editor');
-  const restOfProjects = allProjects.filter(p=>p.title !== 'Prisma Editor');
+  const featured = allProjects.find(p => p.title === 'Prisma Editor');
+  const restOfProjects = allProjects.filter(p => p.title !== 'Prisma Editor');
   return (
     <div className="relative pb-16">
       <Navigation />
@@ -17,11 +17,11 @@ export default async function ProjectsPage() {
           <p className="mt-4 text-zinc-400">Selected projects.</p>
         </div>
         <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
-          <div className="col-span-1 md:col-span-3">
+          {featured && <div className="col-span-1 md:col-span-3">
             <Card>
               <Article project={featured} />
             </Card>
-          </div>
+          </div>}
           {restOfProjects.slice(1, allProjects.length)
             .map((project) => (
               <div className="col-span-1 h-full" key={project.slug}>
