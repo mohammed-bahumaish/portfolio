@@ -22,7 +22,7 @@ export default async function ProjectsPage() {
               <Article project={featured} />
             </Card>
           </div>}
-          {restOfProjects.slice(1, allProjects.length)
+          {restOfProjects
             .map((project) => (
               <div className="col-span-1 h-full" key={project.slug}>
                 <Card key={project.slug}>
