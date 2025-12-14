@@ -1,7 +1,4 @@
 node_modules
 .next
 .velite
-.env
-.env.local
-.env.development
-.env.production
+config.bat
