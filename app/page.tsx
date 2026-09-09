@@ -30,8 +30,14 @@ export default async function Home() {
                 delay={HEADING_DELAY}
                 className="mx-auto max-w-2xl text-center text-4xl font-medium leading-tight tracking-tighter text-text-primary md:text-6xl md:leading-[64px]"
               >
-                Hey, I&apos;m Mohammed! <br /> Welcome to my corner of the
-                internet!
+                Hey, I&apos;m Mohammed!
+              </AnimatedText>
+              <AnimatedText
+                as="p"
+                delay={PARAGRAPH_DELAY}
+                className="mx-auto mt-3 max-w-2xl text-center text-xl font-normal leading-relaxed text-text-secondary md:mt-4 md:text-2xl"
+              >
+                Welcome to my corner of the internet!
               </AnimatedText>
             </GridWrapper>
             <GridWrapper>
@@ -39,13 +45,10 @@ export default async function Home() {
                 <AnimatedText
                   as="p"
                   delay={PARAGRAPH_DELAY}
-                  className="leading-8 text-text-secondary"
+                  className="mx-auto max-w-xl text-balance leading-8 text-text-secondary"
                 >
-                  I&apos;m a software engineer with 4+ years of experience
-                  building web applications for fast-growing startups and SaaS
-                  companies. I specialize in React, Next.js, TypeScript, and
-                  Node.js, with a focus on creating scalable, high-performance,
-                  and user-friendly products.
+                  I’m a software engineer building Arabic voice AI and products
+                  that solve real-world problems.
                 </AnimatedText>
               </div>
             </GridWrapper>

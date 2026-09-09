@@ -7,6 +7,7 @@ const resumeData: ResumeData = {
     {
       company: "Buildpilot.ai",
       period: "Jan 2024 - Present",
+      location: "Linz, Upper Austria, Austria · Remote",
       positions: [
         {
           title: "Product Engineer",
@@ -19,8 +20,24 @@ const resumeData: ResumeData = {
       ],
     },
     {
+      company: "SentiVue.com",
+      period: "Jun 2025 - Dec 2025 · 7 mos",
+      location: "Lisbon, Portugal · Remote",
+      positions: [
+        {
+          title: "Senior Software Engineer · Part-time",
+          description: [
+            "Developed a real-time speech translation app and AI-powered voice support agents for multilingual communication and automated customer assistance.",
+            "Optimized real-time audio processing pipelines to minimize latency.",
+            "Deployed and managed AI/ML models in production environments.",
+          ],
+        },
+      ],
+    },
+    {
       company: "ClickApps",
       period: "Jan 2023 - Dec 2023",
+      location: "Riyadh, Saudi Arabia · Remote",
       positions: [
         {
           title: "Front-End Developer",
@@ -271,6 +288,9 @@ export function Resume() {
           <h2>الخبرات</h2>
           <h3>Buildpilot.ai | {resumeData.arabic?.positions?.engineer}</h3>
           <p>Jan 2024 - Present</p>
+          <h3>SentiVue.com | مهندس برمجيات أول · دوام جزئي</h3>
+          <p>Jun 2025 - Dec 2025 · 7 mos</p>
+          <p>لشبونة، البرتغال · عن بُعد</p>
           <h3>ClickApps | {resumeData.arabic?.positions?.frontend}</h3>
           <p>Jan 2023 - Dec 2023</p>
           <h3>Prisma Editor | {resumeData.arabic?.positions?.opensource}</h3>
@@ -353,6 +373,9 @@ export function Resume() {
                 <div className="hidden md:block">
                   <h3 className="text-xl font-bold">{experience.company}</h3>
                   <p className="text-sm text-gray-600">{experience.period}</p>
+                  {experience.location && (
+                    <p className="text-sm text-gray-600">{experience.location}</p>
+                  )}
                 </div>
 
                 <div />
@@ -374,6 +397,11 @@ export function Resume() {
                       <p className="!mt-0 text-sm text-gray-600 md:hidden">
                         {experience.period}
                       </p>
+                      {experience.location && (
+                        <p className="!mt-0 text-sm text-gray-600 md:hidden">
+                          {experience.location}
+                        </p>
+                      )}
                       <div className="space-y-3">
                         {position.description.map((desc, i) => (
                           <p key={i} className="text-gray-600">

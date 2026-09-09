@@ -5,6 +5,7 @@ export interface Position {
 
 export interface Experience {
   company: string;
+  location?: string;
   period: string;
   positions: Position[];
 }

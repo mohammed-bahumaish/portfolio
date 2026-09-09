@@ -11,8 +11,8 @@ export function Footer(): JSX.Element {
               <div>
                 <div className="flex-grow space-y-6">
                   <p className="w-60 leading-5 text-gray-500">
-                    I&apos;m Mohammed - a software engineer with 4+ years of
-                    experience
+                    I’m Mohammed — a software engineer building the
+                    future of Arabic voice AI.
                   </p>
                 </div>
                 <p className="mt-6 text-gray-500">
